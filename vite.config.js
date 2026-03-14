@@ -9,12 +9,12 @@
 //   }
 // });
 import { defineConfig } from 'vite';
+import cesium from 'vite-plugin-cesium'; // 👈 1. 引入 Cesium 外掛
 
 export default defineConfig({
-  // 告訴 Vite：我的網站是放在這個子目錄底下，請把所有路徑都加上這個前綴
-  base: '/mataian-digital-twin/', 
-
+  base: '/mataian-digital-twin/', // 你的 GitHub 專案名稱
+  plugins: [cesium()],            // 👈 2. 啟動外掛
   build: {
-    outDir: 'docs' // 確保打包輸出到 docs 資料夾
+    outDir: 'docs'
   }
 });

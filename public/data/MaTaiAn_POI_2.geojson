@@ -1,0 +1,643 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [
+    {
+      "type" : "Feature",
+      "id" : 1,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42528250000009,
+          23.666550740000048,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 1,
+        "Name_CN" : "花蓮縣消防局第二大隊暨光復消防分隊",
+        "Name" : "Fire Station",
+        "Classification" : "Infrastructure",
+        "Discription" : "Fire Station",
+        "Latitude" : 23.666550740000002,
+        "Longitude" : 121.42528249999999,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 2,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42484000000002,
+          23.665568380000025,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 2,
+        "Name_CN" : "花蓮縣警察局鳳林分局光復分駐所",
+        "Name" : "Police Station",
+        "Classification" : "Infrastructure",
+        "Discription" : "Police Station",
+        "Latitude" : 23.66556838,
+        "Longitude" : 121.42484,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 3,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42299930000001,
+          23.666058660000033,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 3,
+        "Name_CN" : "柏仁診所",
+        "Name" : "PoRen Clinic",
+        "Classification" : "Medical",
+        "Discription" : "Clinic",
+        "Latitude" : 23.666058660000001,
+        "Longitude" : 121.4229993,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 4,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42544260000011,
+          23.66473816000007,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 4,
+        "Name_CN" : "葉日昇診所",
+        "Name" : "Dr.Ye Clinic",
+        "Classification" : "Medical",
+        "Discription" : "Clinic",
+        "Latitude" : 23.664738159999999,
+        "Longitude" : 121.4254426,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 5,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42559570000003,
+          23.665725620000046,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 5,
+        "Name_CN" : "林梓欽診所",
+        "Name" : "Dr.Lin Clinic",
+        "Classification" : "Medical",
+        "Discription" : "Clinic",
+        "Latitude" : 23.66572562,
+        "Longitude" : 121.4255957,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 6,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.4259009000001,
+          23.671893880000027,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 6,
+        "Name_CN" : "花蓮縣光復鄉衛生所",
+        "Name" : "Guangfu Health Station",
+        "Classification" : "Medical",
+        "Discription" : "Health Station",
+        "Latitude" : 23.671893879999999,
+        "Longitude" : 121.4259009,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 7,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42172930000004,
+          23.667092050000065,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 7,
+        "Name_CN" : "華泓中醫診所",
+        "Name" : "\nTraditional Chinese Medicine Clinic",
+        "Classification" : "Medical",
+        "Discription" : "Clinic",
+        "Latitude" : 23.667092050000001,
+        "Longitude" : 121.4217293,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 8,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42245250000008,
+          23.663611890000027,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 8,
+        "Name_CN" : "臺灣基督長老教會 東部中會 大安教會",
+        "Name" : "Taian Presbyterian Church",
+        "Classification" : "Religious",
+        "Discription" : "Church",
+        "Latitude" : 23.663611889999999,
+        "Longitude" : 121.42245250000001,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 9,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42391420000001,
+          23.663051940000059,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 9,
+        "Name_CN" : "財團法人光復鄉召會聚會所",
+        "Name" : "The Church in Guangfu",
+        "Classification" : "Religious",
+        "Discription" : null,
+        "Latitude" : 23.663051939999999,
+        "Longitude" : 121.4239142,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 10,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42354090000003,
+          23.663331840000069,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 10,
+        "Name_CN" : "花蓮縣光復鄉立圖書館",
+        "Name" : "Guangfu Library",
+        "Classification" : "Infrastructure",
+        "Discription" : null,
+        "Latitude" : 23.663331840000001,
+        "Longitude" : 121.42354090000001,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 11,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42368270000009,
+          23.663658120000036,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 11,
+        "Name_CN" : "花蓮縣光復鄉大安社區活動中心",
+        "Name" : "Daan Activity Center",
+        "Classification" : "Infrastructure",
+        "Discription" : null,
+        "Latitude" : 23.663658120000001,
+        "Longitude" : 121.4236827,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 12,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42121000000009,
+          23.666335580000066,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 12,
+        "Name_CN" : "光復車站",
+        "Name" : "Guangfu Train Station",
+        "Classification" : "Transportation",
+        "Discription" : null,
+        "Latitude" : 23.666335579999998,
+        "Longitude" : 121.42121,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 13,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.4235632000001,
+          23.669300000000078,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 13,
+        "Name_CN" : "花蓮縣光復鄉公所",
+        "Name" : "Guangfu Township Office",
+        "Classification" : "Infrastructure",
+        "Discription" : null,
+        "Latitude" : 23.6693,
+        "Longitude" : 121.4235632,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 14,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42290890000004,
+          23.669418410000048,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 14,
+        "Name_CN" : "花蓮縣光復鄉民代表會",
+        "Name" : "Guangfu Township Representative Council",
+        "Classification" : "Infrastructure",
+        "Discription" : null,
+        "Latitude" : 23.669418409999999,
+        "Longitude" : 121.4229089,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 15,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42427020000002,
+          23.672120280000058,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 15,
+        "Name_CN" : "天主教會大馬堂區聖保祿歸化堂",
+        "Name" : "Church of the Conversion of St. Paul, Guangfu ",
+        "Classification" : "Religious",
+        "Discription" : null,
+        "Latitude" : 23.672120280000001,
+        "Longitude" : 121.4242702,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 16,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.4242766000001,
+          23.66900000000004,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 16,
+        "Name_CN" : "光復鄉大華村活動中心",
+        "Name" : "Dahua Activity Center",
+        "Classification" : "Infrastructure",
+        "Discription" : null,
+        "Latitude" : 23.669,
+        "Longitude" : 121.4242766,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 17,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42465890000005,
+          23.670652840000059,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 17,
+        "Name_CN" : "花蓮縣立光復國民中學",
+        "Name" : "Guangfu Junior High School",
+        "Classification" : "Education",
+        "Discription" : null,
+        "Latitude" : 23.670652839999999,
+        "Longitude" : 121.4246589,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 18,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42632290000006,
+          23.675406910000049,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 18,
+        "Name_CN" : "臺灣基督長老教會 馬太鞍教會",
+        "Name" : "Fata'an Church",
+        "Classification" : "Infrastructure",
+        "Discription" : "Church",
+        "Latitude" : 23.67540691,
+        "Longitude" : 121.4263229,
+        "Notes" : "shelter"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 19,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.41861050000011,
+          23.651417380000055,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 19,
+        "Name_CN" : "大全村活動中心",
+        "Name" : "Dachuan Activity Center",
+        "Classification" : "Infrastructure",
+        "Discription" : null,
+        "Latitude" : 23.651417380000002,
+        "Longitude" : 121.4186105,
+        "Notes" : "shelter"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 20,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.41781210000011,
+          23.651742260000049,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 20,
+        "Name_CN" : "光復鄉立幼兒園",
+        "Name" : "Guangfu Public Kindergarten",
+        "Classification" : "Education",
+        "Discription" : null,
+        "Latitude" : 23.651742259999999,
+        "Longitude" : 121.41781210000001,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 21,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42060600000002,
+          23.658687980000025,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 21,
+        "Name_CN" : "花蓮觀光糖廠",
+        "Name" : "Guangfu Sugar Factory",
+        "Classification" : "Infrastructure",
+        "Discription" : null,
+        "Latitude" : 23.65868798,
+        "Longitude" : 121.42060600000001,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 22,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42719560000012,
+          23.67360646000003,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 22,
+        "Name_CN" : "花蓮縣光復鄉光復國民小學",
+        "Name" : "Guangfu Elementary School",
+        "Classification" : "Education",
+        "Discription" : null,
+        "Latitude" : 23.673606459999998,
+        "Longitude" : 121.4271956,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 23,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42735570000002,
+          23.667161890000045,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 23,
+        "Name_CN" : "國立光復高級商工職業學校",
+        "Name" : "National Kuangfu Commercial and Industrial Vocational High School",
+        "Classification" : "Education",
+        "Discription" : null,
+        "Latitude" : 23.667161889999999,
+        "Longitude" : 121.42735570000001,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 24,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42847270000004,
+          23.671702460000063,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 24,
+        "Name_CN" : "基督復臨安息日會光復教會",
+        "Name" : "Seventh-day Adventist Guangfu Church",
+        "Classification" : "Religious",
+        "Discription" : null,
+        "Latitude" : 23.671702459999999,
+        "Longitude" : 121.4284727,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 25,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.43285560000004,
+          23.672834480000063,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 25,
+        "Name_CN" : "花蓮縣光復鄉三玄宮",
+        "Name" : "Sanxuan Temple",
+        "Classification" : "Religious",
+        "Discription" : null,
+        "Latitude" : 23.672834479999999,
+        "Longitude" : 121.4328556,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 26,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.43470670000011,
+          23.671422490000054,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 26,
+        "Name_CN" : "光復大平福德祠",
+        "Name" : "Fude Temple",
+        "Classification" : "Religious",
+        "Discription" : null,
+        "Latitude" : 23.671422490000001,
+        "Longitude" : 121.43470670000001,
+        "Notes" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 27,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.41912710000008,
+          23.654699020000066,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 27,
+        "Name_CN" : "花蓮縣光復鄉大進國民小學",
+        "Name" : "Dachin Elementary School",
+        "Classification" : "Education",
+        "Discription" : null,
+        "Latitude" : 23.654699019999999,
+        "Longitude" : 121.4191271,
+        "Notes" : "shelter"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 28,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.45043020000003,
+          23.657846560000053,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 28,
+        "Name_CN" : "臺灣基督長老教會 太巴塱教會",
+        "Name" : "Tafalong a kiwkay",
+        "Classification" : "Religious",
+        "Discription" : "Church",
+        "Latitude" : 23.657846559999999,
+        "Longitude" : 121.4504302,
+        "Notes" : "shelter"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 29,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          121.42491770000004,
+          23.669777580000073,
+          0
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 29,
+        "Name_CN" : "花蓮縣私立光復老人長期照顧中心",
+        "Name" : "Guangfu Nursing Home",
+        "Classification" : "Medical",
+        "Discription" : null,
+        "Latitude" : 23.669777580000002,
+        "Longitude" : 121.42491769999999,
+        "Notes" : null
+      }
+    }
+  ]
+}
