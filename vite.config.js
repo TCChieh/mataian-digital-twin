@@ -11,12 +11,10 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  // 關鍵 1：設定 base 路徑。請把 '你的儲存庫名稱' 換成你在 GitHub 上的 Repo 名字
-  // 例如你的 Repo 叫做 mataian-twin，這裡就寫 '/mataian-twin/'
+  // 告訴 Vite：我的網站是放在這個子目錄底下，請把所有路徑都加上這個前綴
   base: '/mataian-digital-twin/', 
 
   build: {
-    // 關鍵 2：叫 Vite 把打包後的檔案丟進 docs 資料夾，而不是預設的 dist
-    outDir: 'docs' 
+    outDir: 'docs' // 確保打包輸出到 docs 資料夾
   }
 });
