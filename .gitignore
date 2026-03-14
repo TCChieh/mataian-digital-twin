@@ -1,0 +1,13 @@
+# Node 套件 (絕對不能傳)
+node_modules/
+
+# Mac 系統自動產生的垃圾檔
+.DS_Store
+
+# 環境變數 (如果有設定密碼或 Token 就不會外流)
+.env
+.env.local
+
+# Vite 預設的打包輸出資料夾 (但我們剛剛改成 docs 了，所以 dist 可以忽略)
+dist/
+dist-ssr/
