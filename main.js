@@ -42,6 +42,11 @@ const viewer = new Viewer("cesiumContainer", {
  sceneMode: SceneMode.COLUMBUS_VIEW, // 3D 模式
  animation: false,
  timeline: false,
+ // 🍎 專為 iOS 續命的設定：關閉對數深度緩衝
+  logarithmicDepthBuffer: false,
+  
+  // (選用) 降低抗鋸齒級別，減輕 iPhone 晶片負擔
+  msaaSamples: 1
 });
 
 
