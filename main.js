@@ -219,7 +219,7 @@ async function addGeoTiffLayer(url) {
 
 // console.log("canvas url", canvas.toDataURL().substring(0, 100));
 // 👇 執行：顯示 DEM
-addGeoTiffLayer("./data/MaTaiAn20m113.tif");
+// addGeoTiffLayer("./data/MaTaiAn20m113.tif");
 
 
 // === loading buildings (from NCU) ===
@@ -354,7 +354,7 @@ async function loadRivers() {
       
       // 2. 關鍵修正：設定分類類型
       // 這告訴 Cesium 把這個多邊形「畫在地形與 3D Tiles 之上」
-      e.polygon.classificationType = ClassificationType.TERRAIN; 
+      // e.polygon.classificationType = ClassificationType.TERRAIN; 
 
       // 3. 關閉邊框 (有時候邊框會干擾貼地渲染)
       e.polygon.outline = false;
@@ -551,7 +551,27 @@ async function loadFacilities() {
 }
 
 
+// ====== 專為 iOS Safari 續命的效能優化 ======
 
+// 判斷如果是手機螢幕 (寬度小於 800px)
+if (window.innerWidth < 800) {
+  
+  // 1. 殺手鐧：強制把渲染解析度砍半。這會大幅減少記憶體消耗！
+  // 雖然畫面會稍微糊一點點，但保證不會閃退。
+  viewer.resolutionScale = 0.5; 
+
+  // 2. 降低地形的精細度要求 (預設是 2，調高代表放寬標準，少載入一些地形圖塊)
+  viewer.scene.globe.maximumScreenSpaceError = 4;
+
+  // 3. 關閉吃效能的抗鋸齒特效
+  viewer.scene.postProcessStages.fxaa.enabled = false;
+  if (viewer.scene.msaaSamples) {
+    viewer.scene.msaaSamples = 1; 
+  }
+
+  // 4. (選用) 如果妳的河川 GeoJSON 還是很大，暫時不要讓它貼合地形 (超耗 GPU)
+  // 如果之前有設定 clampToGround，建議在手機版先關掉
+}
 
 
 
