@@ -20,7 +20,8 @@ import {
  HorizontalOrigin,
  LabelStyle,
  Cartesian2,
- Ellipsoid
+ Ellipsoid,
+ Cesium3DTileset
 } from "cesium";
 // import * as Cesium from "cesium";
 import { fromUrl } from "geotiff"; 
@@ -223,6 +224,7 @@ async function addGeoTiffLayer(url) {
 
 
 // === loading buildings (from NCU) ===
+/*
 async function loadBuildings() {
   // console.log("🚀 開始載入建築數據...");
 
@@ -308,6 +310,20 @@ async function loadBuildings() {
   
   // 飛過去看
   // viewer.zoomTo(dataSource);
+}
+*/
+// === loading buildings (from Cesium ion 3D Tiles) ===
+async function loadBuildings() {
+  console.log("🏙️ 開始載入雲端 3D 建築...");
+  try {
+    // 呼叫你剛剛熱騰騰拿到的 ID
+    const tileset = await Cesium3DTileset.fromIonAssetId(4540060);
+    viewer.scene.primitives.add(tileset);
+    
+    console.log("✅ 3D 建築載入成功！");
+  } catch (error) {
+    console.error("❌ 3D 建築載入失敗:", error);
+  }
 }
 
 // === loading rivers (from WRA opendata ) ===
