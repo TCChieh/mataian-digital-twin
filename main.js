@@ -578,10 +578,10 @@ if (window.innerWidth < 800) {
 // 執行
 // didn't work, I guess the point was unvisible because of terrain
 // loadFacilities(); 
-loadBuildings();
-loadRivers();
-loadOverflow();
-loadRoads();
+// loadBuildings();
+// loadRivers();
+// loadOverflow();
+// loadRoads();
 
 // loadStations();
 
