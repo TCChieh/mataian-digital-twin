@@ -632,7 +632,7 @@ async function loadTrajectory() {
 // 執行
 // didn't work, I guess the point was unvisible because of terrain
 // loadFacilities(); 
-loadBuildings();
+// loadBuildings();
 loadTrajectory();
 loadRivers();
 loadOverflow();
