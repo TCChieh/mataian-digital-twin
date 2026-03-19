@@ -246,7 +246,7 @@ async function loadBuildings() {
   // console.log("🚀 開始載入建築數據...");
 
   // 1. 載入 GeoJSON (維持 clampToGround: false)
-  const dataSource = await GeoJsonDataSource.load("./data/Hualien_B_Guangfu_10x10per.json", {
+  const dataSource = await GeoJsonDataSource.load("./data/Hualien_B_Guangfu_10per.json", {
     clampToGround: false 
   });
 
@@ -632,8 +632,24 @@ async function loadTrajectory() {
 // 執行
 // didn't work, I guess the point was unvisible because of terrain
 // loadFacilities(); 
-loadBuildings();
-loadTrajectory();
+// loadBuildings();
+// loadTrajectory();
+// ==========================================
+// 🚀 執行區塊與 iOS 設備防禦機制
+// ==========================================
+
+// 1. 寫一個精準偵測 iOS (iPhone, iPad, iPod) 的小工具
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+              (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+// 2. 條件式載入：如果是 iOS 就跳過建築物
+if (isIOS) {
+    console.log("🍎 偵測到 iOS 設備：為避免 Safari 記憶體閃退，已封印建築物圖層。");
+} else {
+    console.log("💻/🤖 偵測到電腦或 Android 設備：火力全開，載入 3D 建築！");
+    loadBuildings();
+}
+
 loadRivers();
 loadOverflow();
 loadRoads();
