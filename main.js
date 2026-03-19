@@ -21,7 +21,9 @@ import {
  LabelStyle,
  Cartesian2,
  Ellipsoid,
- Cesium3DTileset
+ Cesium3DTileset,
+ IonResource,
+  CzmlDataSource
 } from "cesium";
 // import * as Cesium from "cesium";
 import { fromUrl } from "geotiff"; 
@@ -36,6 +38,7 @@ Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0Y2RiM
 
 
 // 3D 地球
+/*
 const viewer = new Viewer("cesiumContainer", {
 //   terrainProvider: await CesiumTerrainProvider.fromIonAssetId(1), // 世界地形
  terrainProvider: await createWorldTerrainAsync(),
@@ -47,6 +50,20 @@ const viewer = new Viewer("cesiumContainer", {
   logarithmicDepthBuffer: false,
   
   // (選用) 降低抗鋸齒級別，減輕 iPhone 晶片負擔
+  msaaSamples: 1
+});
+*/
+const viewer = new Viewer("cesiumContainer", {
+  terrainProvider: await createWorldTerrainAsync(),
+  baseLayerPicker: true,
+  sceneMode: SceneMode.COLUMBUS_VIEW,
+  
+  // 🌟 喚醒時間控制儀表板
+  animation: true,     // 打開左下角的播放器
+  timeline: true,      // 打開底部的時間軸
+  shouldAnimate: true, // 網頁載入後自動開始播放
+  
+  logarithmicDepthBuffer: false,
   msaaSamples: 1
 });
 
@@ -224,12 +241,12 @@ async function addGeoTiffLayer(url) {
 
 
 // === loading buildings (from NCU) ===
-/*
+
 async function loadBuildings() {
   // console.log("🚀 開始載入建築數據...");
 
   // 1. 載入 GeoJSON (維持 clampToGround: false)
-  const dataSource = await GeoJsonDataSource.load("./data/Hualien_B_Guangfu.geojson", {
+  const dataSource = await GeoJsonDataSource.load("./data/Hualien_B_Guangfu_10per.json", {
     clampToGround: false 
   });
 
@@ -311,8 +328,9 @@ async function loadBuildings() {
   // 飛過去看
   // viewer.zoomTo(dataSource);
 }
-*/
+
 // === loading buildings (from Cesium ion 3D Tiles) ===
+/*
 async function loadBuildings() {
   console.log("🏙️ 開始載入雲端 3D 建築...");
   try {
@@ -325,6 +343,7 @@ async function loadBuildings() {
     console.error("❌ 3D 建築載入失敗:", error);
   }
 }
+*/
 
 // === loading rivers (from WRA opendata ) ===
 async function loadRivers() {
@@ -588,16 +607,36 @@ if (window.innerWidth < 800) {
   // 4. (選用) 如果妳的河川 GeoJSON 還是很大，暫時不要讓它貼合地形 (超耗 GPU)
   // 如果之前有設定 clampToGround，建議在手機版先關掉
 }
-
+// === loading trajectory (ABM 封橋軌跡) ===
+async function loadTrajectory() {
+  console.log("🚗 開始載入 ABM 軌跡...");
+  try {
+    // 你寫的完美程式碼！
+    const resource = await IonResource.fromAssetId(4531430);
+    const dataSource = await CzmlDataSource.load(resource);
+    
+    // 加進 3D 地球裡
+    await viewer.dataSources.add(dataSource);
+    
+    // 讓攝影機自動飛到軌跡發生的時間與地點！
+    // 這樣你就不用自己手動找車子在哪裡了
+    viewer.zoomTo(dataSource);
+    
+    console.log("✅ ABM 軌跡載入成功！");
+  } catch (error) {
+    console.error("❌ 軌跡載入失敗:", error);
+  }
+}
 
 
 // 執行
 // didn't work, I guess the point was unvisible because of terrain
 // loadFacilities(); 
 loadBuildings();
-// loadRivers();
-// loadOverflow();
-// loadRoads();
+// loadTrajectory();
+loadRivers();
+loadOverflow();
+loadRoads();
 
 // loadStations();
 
