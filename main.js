@@ -246,7 +246,7 @@ async function loadBuildings() {
   // console.log("🚀 開始載入建築數據...");
 
   // 1. 載入 GeoJSON (維持 clampToGround: false)
-  const dataSource = await GeoJsonDataSource.load("./data/Hualien_B_Guangfu_10per.json", {
+  const dataSource = await GeoJsonDataSource.load("./data/Hualien_B_Guangfu_10x10per.json", {
     clampToGround: false 
   });
 
@@ -632,7 +632,7 @@ async function loadTrajectory() {
 // 執行
 // didn't work, I guess the point was unvisible because of terrain
 // loadFacilities(); 
-// loadBuildings();
+loadBuildings();
 loadTrajectory();
 loadRivers();
 loadOverflow();
