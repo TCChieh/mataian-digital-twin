@@ -59,9 +59,9 @@ const viewer = new Viewer("cesiumContainer", {
   sceneMode: SceneMode.COLUMBUS_VIEW,
   
   // 🌟 喚醒時間控制儀表板
-  animation: true,     // 打開左下角的播放器
-  timeline: true,      // 打開底部的時間軸
-  shouldAnimate: true, // 網頁載入後自動開始播放
+  animation: false,     // 打開左下角的播放器
+  timeline: false,      // 打開底部的時間軸
+  // shouldAnimate: true, // 網頁載入後自動開始播放
   
   logarithmicDepthBuffer: false,
   msaaSamples: 1
